@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lingeclean</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Lingeclean Express Memory</h2>
+    <a id="send-email-link" href="#">Envoyer le score par e-mail</a>
+
+    <div class="game-container">
+        <div class="game-card" id="lingeclean-memory-game">
+            <img src="https://lingeclean.simdif.com/images/public/sd_64db33bd6da17.png?no_cache=1692087234" alt="Lingeclean Logo" style="width: 15%; height: 15%;">
+
+            <div class="points-container" id="points-container" style="display: none;">
+                <h3>Grille de Points et Codes Promo :</h3>
+                <ul>
+                    <li>10 points - Code Promo : 5%</li>
+                    <li>20 points - Code Promo : 10%</li>
+                    <li>30 points - Code Promo : 20%</li>
+                </ul>
+            </div>
+            <p>Associez les vêtements pour gagner des points et recevoir un code promo exclusif.</p>
+            <p>Envoyez votre score par mail à partir du jeu.</p>
+            <div class="grid" id="game-grid"></div>
+            
+            <p>Score : <span id="score">0</span> Vies : <span id="lives">5</span></p>
+            <p>Temps restant : <span id="timer">60</span> secondes</p>
+
+            <button id="start-button">Démarrer</button>
+            <div class="victory-message"></div>
+            <div class="promotion-message"></div>
+            <div class="end-message"></div>
+            <div id="rules-modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Règles du Jeu</h2>
+                    <p>Mémorisez et associez les cartes en cliquant dessus.</p>
+                    <p>Chaque correspondance correcte vous rapporte des points, tandis qu'une mauvaise correspondance coûte une vie.</p>
+                    <p>Vous avez cinq vies. Si vous les perdez toutes, le jeu est terminé.</p>
+                    <p>Si vous atteignez 28 points, vous gagnez la partie et un code promo de 20%.</p>
+                </div>
+            </div>
+            
+            <!-- Bouton "Visitez notre site web" -->
+            <a href="https://lingeclean.com" target="_blank" class="visit-website-button">Visitez notre site web</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
